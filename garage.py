@@ -54,7 +54,8 @@ class ParkingGarage():
             self.tickets.append(self.ticket)
             self.parkingSpaces.append(self.space)
         else:
-            print("Please pay before leaving.")
+            input("Please pay before leaving: $")
+            print("Thank you, have a nice day!")
 
         # check if ticket has been paid
         # updates parkingspaces +1
