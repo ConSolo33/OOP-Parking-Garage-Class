@@ -55,6 +55,8 @@ class ParkingGarage():
             self.parkingSpaces.append(self.space)
         else:
             input("Please pay before leaving: $")
+            transfer = self.currentTicket.pop('taken')
+            self.currentTicket['paid'] = transfer
             print("Thank you, have a nice day!")
 
         # check if ticket has been paid
